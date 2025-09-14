@@ -1,0 +1,5 @@
+spark/kafka-data
+spark/metrics
+spark/order-processor/ivy_cache
+spark-apps
+spark-logs
