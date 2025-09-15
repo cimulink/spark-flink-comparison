@@ -23,7 +23,6 @@ services:
       KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
       KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
       CLUSTER_ID: 'MkU3OEVBNTcwNTJENDM2Qk'
-      # KAFKA_OPTS: "-javaagent:/usr/share/java/cp-base-new/jmx_prometheus_javaagent-0.18.0.jar=9101:/etc/kafka/jmx/jmx_config_prometheus.yml"
       EXTRA_ARGS: '-javaagent:/usr/share/java/cp-base-new/jmx_prometheus_javaagent-0.18.0.jar=9101:/etc/prometheus/prometheus.yml'
       JMX_PROMETHEUS_PORT: 9101
       KAFKA_OPTS: '-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=localhost'

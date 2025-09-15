@@ -1,0 +1,23 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'kafka'
+    static_configs:
+      - targets: ['kafka:9102']
+
+  - job_name: 'flink-jobmanager'
+    static_configs:
+      - targets: ['jobmanager:9249']
+
+  - job_name: 'flink-taskmanager-1'
+    static_configs:
+      - targets: ['taskmanager-1:9249']
+
+  - job_name: 'flink-taskmanager-2'
+    static_configs:
+      - targets: ['taskmanager-2:9249']
+
+  - job_name: 'flink-order-processor'
+    static_configs:
+      - targets: ['order-processor:9249']
